@@ -1,0 +1,12 @@
+{application,ecto_network,
+             [{applications,[kernel,stdlib,elixir,logger,ecto_sql,postgrex]},
+              {description,"Ecto types to support MACADDR and Network extensions provided by Postgrex.\n"},
+              {modules,['Elixir.EctoNetwork','Elixir.EctoNetwork.CIDR',
+                        'Elixir.EctoNetwork.INET',
+                        'Elixir.EctoNetwork.MACADDR',
+                        'Elixir.Phoenix.HTML.Safe.Postgrex.INET',
+                        'Elixir.Phoenix.HTML.Safe.Postgrex.MACADDR',
+                        'Elixir.String.Chars.Postgrex.INET',
+                        'Elixir.String.Chars.Postgrex.MACADDR']},
+              {registered,[]},
+              {vsn,"1.3.0"}]}.

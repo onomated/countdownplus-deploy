@@ -1,0 +1,12 @@
+# Ignore IDE files
+/.vscode/
+.envrc
+
+# Ignore docker config files
+.env
+app_*.env
+
+# Allow bin scripts in artifacts
+!/nginx/**
+!/services/**
+!/frontend/**

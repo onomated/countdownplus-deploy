@@ -1,0 +1,12 @@
+Current commit:
+master -> 7ef129f
+
+Recent commits:
+7ef129f Address countdown updates during migrations.  Particularly around images getting deleted when they shouldn't
+ce151ed Fix resolving ids during user migration
+04e8c10 Release that fixes holiday migration with date ranges that are not current
+2eafe53 Ensure that starts at is set to the last civil date if the civil date range doesn't extend to now
+67846b9 Fix holiday migrations
+
+Modified files (pending commit):
+

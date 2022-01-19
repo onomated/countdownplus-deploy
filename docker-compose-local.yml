@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+
+  # Nginx reverse proxy
+  nginx:
+    depends_on:
+      - services
+      - imgproxy
+    restart: always # Essential since it routes traffic to our entire app
+    build: ./nginx
+    ports: 
+      - 80:80
+  
+  # Elixir app
+  services:
+    build: 
+      context: ./services
+    ports: 
+      - 4000:4000
+    env_file: 
+      - app_local.env
+  
+  # Imgproxy
+  imgproxy:
+    image: darthsim/imgproxy
+    ports:
+      - 8080:8080
+    env_file: 
+      - app_local.env

@@ -1,0 +1,34 @@
+version: "3.9"
+services:
+
+  # Nginx reverse proxy
+  nginx:
+    depends_on:
+      - services
+      - imgproxy
+    restart: always # Essential since it routes traffic to our entire app
+    build: ./nginx
+    ports: 
+      - 80:80
+    volumes: 
+      # https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.dc-customized-logging
+      - "/var/log/eb-docker/containers/nginx:/var/log/nginx"
+  
+  # Elixir app
+  services:
+    build: 
+      context: ./services
+    ports: 
+      - 4000:4000
+    env_file: 
+      # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
+      - .env
+  
+  # Imgproxy
+  imgproxy:
+    image: darthsim/imgproxy
+    ports:
+      - 8080:8080
+    env_file: 
+      # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
+      - .env
