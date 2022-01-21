@@ -15,7 +15,7 @@ RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-# COPY release/next.config.js ./
+COPY release/next.config.js ./
 COPY release/public ./public
 COPY release/package.json ./package.json
 
