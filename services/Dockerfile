@@ -14,6 +14,6 @@ ENV PORT=4000 \
 WORKDIR /app
 RUN chown nobody:nobody /app
 USER nobody:nobody
-COPY --chown=nobody:nobody countdownplus_app .
+COPY --chown=nobody:nobody release/countdownplus_app .
 
 CMD ["bin/countdownplus_app", "start"]
