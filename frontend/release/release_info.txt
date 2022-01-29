@@ -1,0 +1,14 @@
+
+Current commit:
+main -> a0b00c9
+
+Recent commits:
+a0b00c9 Updated to tailwindcss 3.0
+8a7553a Add .eslintcache to gitignore
+c1e21ed Fixed tailwind content configuration
+3ceced0 Generated release
+a200fca * Admin graphql networking wired up * Completed implementation of index view components and hooks to support filtering and sorting * Admin list users implemented
+
+Modified files (pending commit):
+ M package.json
+  

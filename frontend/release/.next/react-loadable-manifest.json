@@ -1,0 +1,17 @@
+{
+  "../../node_modules/next/dist/client/index.js -> ../pages/_error": {
+    "id": 99651,
+    "files": [
+      "static/chunks/651.c1e427124570bea0.js"
+    ]
+  },
+  "../domains/admin/App/index.js -> ../layout": {
+    "id": 253,
+    "files": [
+      "static/chunks/29107295.2c3ce868677a27a4.js",
+      "static/css/fc7fdb3e426731e3.css",
+      "static/chunks/21-d265d3c757733ec2.js",
+      "static/chunks/253.99317e22fef518bc.js"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "countdownplus-nextjs",
+  "private": true,
+  "scripts": {
+    "dev": "npm run app:sync-vars && next dev",
+    "build": "next build",
+    "start": "next start",
+    "serve": "npm run build && npm run start",
+    "clean": "rimraf .next",
+    "nuke": "rimraf .next && rimraf .next && rimraf package-lock.json && rimraf node_modules && npm install",
+    "release": "./scripts/release.js",
+    "prettier": "prettier \"**/*.{json,md,scss,less,yaml,yml}\"",
+    "lint": "next lint && npm run prettier -- --list-different",
+    "lint:fix": "next lint --fix && npm run prettier -- --write",
+    "app:sync-vars": "cd src/scripts/ && node sync-antd-vars-to-root.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@next/bundle-analyzer": "^12.0.4",
+    "antd": "^4.17.2",
+    "date-fns": "^2.28.0",
+    "graphql": "^16.0.1",
+    "graphql-request": "^3.7.0",
+    "inflection": "^1.13.1",
+    "localforage": "^1.10.0",
+    "lodash.get": "^4.4.2",
+    "mobx": "^6.3.10",
+    "mobx-react-lite": "^3.2.3",
+    "next": "^12.0.7",
+    "next-compose-plugins": "^2.2.1",
+    "next-plugin-antd-less": "^1.5.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-query": "^3.34.7",
+    "react-topbar-progress-indicator": "^4.1.0",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.0",
+    "rimraf": "^3.0.2",
+    "tailwind-styled-components": "^2.0.3",
+    "tailwindcss": "^3.0.17"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
+    "*.{json,md,scss,less,yaml,yml}": "prettier --write"
+  }
+}
