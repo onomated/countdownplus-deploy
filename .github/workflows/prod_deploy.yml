@@ -1,0 +1,67 @@
+name: Deploy to Prod
+env:
+  APP_NAME: countdownplus
+  APP_ENV: prod
+  AWS_REGION_NAME: us-east-1
+  BEANSTALK_APP_NAME: Countdownplus
+  BEANSTALK_ENV_NAME: cplus-docker
+
+on:
+  push:
+    branches:
+      - main
+    pull_request:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to Elastic Beanstalk
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION_NAME }}
+
+      # - name: Replace Build Args
+      #   # v2
+      #   uses: datamonsters/replace-action@54f8e7be24769a843c1c60a0cc9fa3c1aaa906ca
+      #   with:
+      #     files: 'docker-compose.yml'
+      #     replacements: '$OBAN_LICENSE_KEY=${{ secrets.OBAN_LICENSE_KEY }},$OBAN_KEY_FINGERPRINT=${{ secrets.OBAN_KEY_FINGERPRINT }}'
+
+      - name: Copy env file from s3
+        run: |
+          aws s3 cp s3://appsbeyond-configs/${{ env.APP_NAME }}/production/app_prod.env .env
+
+      - name: Generate deployment package
+        run: zip -r deploy.zip . -x ".git**" "docs**" "docker-compose-*.yml"
+
+      - name: Beanstalk Deploy for app
+        # v20
+        uses: einaregilsson/beanstalk-deploy@6f594ded1b0a22c5e5aa1088e7c58dc5816c92ea
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: ${{ env.AWS_REGION_NAME }}
+          application_name: ${{ env.BEANSTALK_APP_NAME }}
+          environment_name: ${{ env.BEANSTALK_ENV_NAME }}
+          version_label: ${{ github.sha }}
+          deployment_package: deploy.zip
+          use_existing_version_if_available: true
+#      - name: Notify Status
+#        uses: sonots/slack-notice-action@v3
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required
+#          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # Required
+#        with:
+#          status: ${{ job.status }}
+#          text: 'Countdown+ Prod Deployment'
+#          icon_emoji: ':rocket:'
+#        if: always()
