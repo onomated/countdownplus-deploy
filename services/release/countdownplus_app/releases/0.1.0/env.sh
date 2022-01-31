@@ -16,8 +16,3 @@
 # RELEASE_DISTRIBUTION variable below. Must be "sname", "name" or "none".
 # export RELEASE_DISTRIBUTION=name
 # export RELEASE_NODE=countdownplus_app@127.0.0.1
-
-if [ "$RELEASE_COMMAND" = "start" ]; then
-  echo "Beginning migration script..."
-  bin/countdownplus_app eval "Countdownplus.ReleaseTasks.migrate()"
-fi

@@ -1,35 +1,15 @@
 Current commit:
-graphql -> c84e8e4
+graphql -> 4d2233c
 
 Recent commits:
+4d2233c This repo is no longer responsible for prod deploys.  Moved to `countdownplus-backend`
+2e1a7de *  Updated to the latest Elixir releases documentation:  https://hexdocs.pm/phoenix/releases.html#containers. Re-ran `mix phx.gen.release --docker` and massaged output for umbrella apps *  Removed old remnants of docker-compose and docker files that are now moved to the countdownplus-backend repo *  Cleaned up docker ignore to remove tons of _elixirls files *  Created new release
 c84e8e4 * Added auth module that is a module plug and also includes authentication plug functions * Moved absinthe context builder plug to plugs directory and renamed to `gql_context` * Live dashboard and oban pages now auth protected by authorization header and/or basic auth
 e17d847 * Updated to phoenix 1.6, and all other packages to the latest versions * Removed all html, live pages, and assets.  This codebase is all about API services * Root path now displays live dashboard, and oban dashboard now accessible at '/job-server' * Fixed all gql schema tests that had invalid types (wrong casing) defined.  Latest version of Absinthe now catching that
 e0923bf Upgraded to latest and greatest versions for countdownplus `context` app
-04a79d2 * Updated boolean query operators to remove operations that don't make sense * Added `how-to` docs
-a2c3b8a Added CORs plug to allow api access to endpoint
 
 Modified files (pending commit):
-M  .dockerignore
-M  .gitignore
-M  Dockerfile
-M  apps/countdownplus/.gitignore
-M  apps/countdownplus/lib/countdownplus/release_tasks.ex
-R  apps/countdownplus/lib/mix/task/cplus/gen/context_tests.ex -> apps/countdownplus/lib/mix/tasks/cplus/gen/context_tests.ex
-R  apps/countdownplus/lib/mix/task/cplus/gen/test_factory.ex -> apps/countdownplus/lib/mix/tasks/cplus/gen/test_factory.ex
- M apps/countdownplus/mix.exs
-M  apps/countdownplus_web/.gitignore
- M apps/countdownplus_web/mix.exs
-M  build.Dockerfile
  M config/dev.exs
-D  config/releases.exs
-A  config/runtime.exs
-D  docker-compose-local.yml
-D  docker-compose.yml
-M  docs/dev_ops/docker.md
-D  nginx/Dockerfile
-D  nginx/configs/default.conf
-D  nginx/configs/nginx.conf
-A  rel/overlays/bin/migrate
-A  rel/overlays/bin/migrate.bat
-A  rel/overlays/bin/server
-A  rel/overlays/bin/server.bat
+ D rel/env.bat.eex
+ D rel/env.sh.eex
+ D rel/vm.args.eex
