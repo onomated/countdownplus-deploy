@@ -24,7 +24,7 @@ defmodule Countdownplus.Repo.Migrations.CreateEnums do
     # NotificationChannel,
     ProfileAttachmentType,
     PurchaseModel,
-    RelationshipType,
+    RelationshipType
     # ReminderUnit,
   }
 
@@ -52,7 +52,7 @@ defmodule Countdownplus.Repo.Migrations.CreateEnums do
           # NotificationChannel,
           PurchaseModel,
           ProfileAttachmentType,
-          RelationshipType,
+          RelationshipType
           # ReminderUnit,
         ],
         do: enum_mod.create_type()

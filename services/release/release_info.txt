@@ -1,12 +1,35 @@
 Current commit:
-master -> 7ef129f
+graphql -> c84e8e4
 
 Recent commits:
-7ef129f Address countdown updates during migrations.  Particularly around images getting deleted when they shouldn't
-ce151ed Fix resolving ids during user migration
-04e8c10 Release that fixes holiday migration with date ranges that are not current
-2eafe53 Ensure that starts at is set to the last civil date if the civil date range doesn't extend to now
-67846b9 Fix holiday migrations
+c84e8e4 * Added auth module that is a module plug and also includes authentication plug functions * Moved absinthe context builder plug to plugs directory and renamed to `gql_context` * Live dashboard and oban pages now auth protected by authorization header and/or basic auth
+e17d847 * Updated to phoenix 1.6, and all other packages to the latest versions * Removed all html, live pages, and assets.  This codebase is all about API services * Root path now displays live dashboard, and oban dashboard now accessible at '/job-server' * Fixed all gql schema tests that had invalid types (wrong casing) defined.  Latest version of Absinthe now catching that
+e0923bf Upgraded to latest and greatest versions for countdownplus `context` app
+04a79d2 * Updated boolean query operators to remove operations that don't make sense * Added `how-to` docs
+a2c3b8a Added CORs plug to allow api access to endpoint
 
 Modified files (pending commit):
-
+M  .dockerignore
+M  .gitignore
+M  Dockerfile
+M  apps/countdownplus/.gitignore
+M  apps/countdownplus/lib/countdownplus/release_tasks.ex
+R  apps/countdownplus/lib/mix/task/cplus/gen/context_tests.ex -> apps/countdownplus/lib/mix/tasks/cplus/gen/context_tests.ex
+R  apps/countdownplus/lib/mix/task/cplus/gen/test_factory.ex -> apps/countdownplus/lib/mix/tasks/cplus/gen/test_factory.ex
+ M apps/countdownplus/mix.exs
+M  apps/countdownplus_web/.gitignore
+ M apps/countdownplus_web/mix.exs
+M  build.Dockerfile
+ M config/dev.exs
+D  config/releases.exs
+A  config/runtime.exs
+D  docker-compose-local.yml
+D  docker-compose.yml
+M  docs/dev_ops/docker.md
+D  nginx/Dockerfile
+D  nginx/configs/default.conf
+D  nginx/configs/nginx.conf
+A  rel/overlays/bin/migrate
+A  rel/overlays/bin/migrate.bat
+A  rel/overlays/bin/server
+A  rel/overlays/bin/server.bat

@@ -1,0 +1,13 @@
+{application,ex_cldr_territories,
+             [{applications,[kernel,stdlib,elixir,logger,ex_cldr]},
+              {description,"Terrritory formatting functions for the Common Locale Data Repository (CLDR)\npackage ex_cldr\n"},
+              {modules,['Elixir.Cldr.Territory',
+                        'Elixir.Cldr.Territory.Backend',
+                        'Elixir.Cldr.UnknownChildrenError',
+                        'Elixir.Cldr.UnknownFlagError',
+                        'Elixir.Cldr.UnknownLanguageTagError',
+                        'Elixir.Cldr.UnknownParentError',
+                        'Elixir.Cldr.UnknownStyleError',
+                        'Elixir.Cldr.UnknownSubdivisionError']},
+              {registered,[]},
+              {vsn,"2.3.0"}]}.

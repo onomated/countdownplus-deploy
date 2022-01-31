@@ -1,8 +1,8 @@
 defmodule Countdownplus.Repo.Migrations.CreateApp do
   use Ecto.Migration
 
-  import Inflex
   import String, only: [to_atom: 1]
+  import Inflex
 
   alias Countdownplus.Db.Migration, as: Utils
   alias Countdownplus.Db.IndexNames
@@ -658,9 +658,9 @@ defmodule Countdownplus.Repo.Migrations.CreateApp do
 
       create table(table_sym, primary_key: false) do
         add attachable_id_sym,
-              references(to_atom(pluralize(attachable)), on_delete: :delete_all),
-              null: false,
-              primary_key: true
+            references(to_atom(pluralize(attachable)), on_delete: :delete_all),
+            null: false,
+            primary_key: true
 
         add :attachment_id, references(:attachments, on_delete: :delete_all),
           null: false,
@@ -675,9 +675,14 @@ defmodule Countdownplus.Repo.Migrations.CreateApp do
       end
 
       create unique_index(table_sym, [:profile_attachment_type, attachable_id_sym],
-              name: apply(IndexNames, to_atom("#{attachable}_attachments_unique_profile_attachment_type_name"), [])
-            )
-  end
+               name:
+                 apply(
+                   IndexNames,
+                   to_atom("#{attachable}_attachments_unique_profile_attachment_type_name"),
+                   []
+                 )
+             )
+    end
 
     #
     # All other attachment links

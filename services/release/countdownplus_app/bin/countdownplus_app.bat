@@ -9,6 +9,7 @@ popd
 if not defined RELEASE_NAME (set RELEASE_NAME=countdownplus_app)
 if not defined RELEASE_VSN (for /f "tokens=1,2" %%K in ('type "!RELEASE_ROOT!\releases\start_erl.data"') do (set ERTS_VSN=%%K) && (set RELEASE_VSN=%%L))
 if not defined RELEASE_MODE (set RELEASE_MODE=embedded)
+if not defined RELEASE_PROG (set RELEASE_PROG=%~nx0)
 set RELEASE_COMMAND=%~1
 set REL_VSN_DIR=!RELEASE_ROOT!\releases\!RELEASE_VSN!
 call "!REL_VSN_DIR!\env.bat"
@@ -17,6 +18,7 @@ if not defined RELEASE_COOKIE (set /p RELEASE_COOKIE=<!RELEASE_ROOT!\releases\CO
 if not defined RELEASE_NODE (set RELEASE_NODE=!RELEASE_NAME!)
 if not defined RELEASE_TMP (set RELEASE_TMP=!RELEASE_ROOT!\tmp)
 if not defined RELEASE_VM_ARGS (set RELEASE_VM_ARGS=!REL_VSN_DIR!\vm.args)
+if not defined RELEASE_REMOTE_VM_ARGS (set RELEASE_REMOTE_VM_ARGS=!REL_VSN_DIR!\remote.vm.args)
 if not defined RELEASE_DISTRIBUTION (set RELEASE_DISTRIBUTION=sname)
 if not defined RELEASE_BOOT_SCRIPT (set RELEASE_BOOT_SCRIPT=start)
 if not defined RELEASE_BOOT_SCRIPT_CLEAN (set RELEASE_BOOT_SCRIPT_CLEAN=start_clean)
@@ -119,6 +121,7 @@ if "!RELEASE_DISTRIBUTION!" == "none" (
   !RELEASE_DISTRIBUTION_FLAG! ^
   --boot "!REL_VSN_DIR!\!RELEASE_BOOT_SCRIPT_CLEAN!" ^
   --boot-var RELEASE_LIB "!RELEASE_ROOT!\lib" ^
+  --vm-args "!RELEASE_REMOTE_VM_ARGS!" ^
   --remsh "!RELEASE_NODE!"
 goto end
 
@@ -134,6 +137,7 @@ if "!RELEASE_DISTRIBUTION!" == "none" (
   !RELEASE_DISTRIBUTION_FLAG! ^
   --boot "!REL_VSN_DIR!\!RELEASE_BOOT_SCRIPT_CLEAN!" ^
   --boot-var RELEASE_LIB "!RELEASE_ROOT!\lib" ^
+  --vm-args "!RELEASE_REMOTE_VM_ARGS!" ^
   --rpc-eval "!RELEASE_NODE!" "!REL_RPC!"
 goto end
 

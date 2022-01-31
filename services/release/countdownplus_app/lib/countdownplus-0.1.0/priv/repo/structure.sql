@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 13.0
--- Dumped by pg_dump version 13.0
+-- Dumped from database version 13.4
+-- Dumped by pg_dump version 13.4
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -331,6 +331,17 @@ CREATE TYPE public.oban_job_state AS ENUM (
     'completed',
     'discarded',
     'cancelled'
+);
+
+
+--
+-- Name: privacy_mode; Type: TYPE; Schema: public; Owner: -
+--
+
+CREATE TYPE public.privacy_mode AS ENUM (
+    'private',
+    'contacts',
+    'public'
 );
 
 
@@ -682,6 +693,20 @@ CREATE TABLE public.auth_provider_profiles (
 
 
 --
+-- Name: categories; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.categories (
+    id uuid NOT NULL,
+    owner_id uuid NOT NULL,
+    inserted_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    settings jsonb NOT NULL,
+    countdown_count integer DEFAULT 0 NOT NULL
+);
+
+
+--
 -- Name: countdown_attachments; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -707,6 +732,16 @@ CREATE TABLE public.countdowns (
     countdown_settings jsonb,
     extended jsonb,
     internal jsonb
+);
+
+
+--
+-- Name: countdowns_categories; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.countdowns_categories (
+    countdown_id uuid NOT NULL,
+    category_id uuid NOT NULL
 );
 
 
@@ -1219,6 +1254,7 @@ CREATE TABLE public.users (
     group_membership_count integer DEFAULT 0 NOT NULL,
     user_attachment_count integer DEFAULT 0 NOT NULL,
     score bigint GENERATED ALWAYS AS (public.countdownplus_user_score(countdown_count, event_count, follower_count, following_count, group_count, group_membership_count, user_attachment_count)) STORED,
+    privacy_mode public.privacy_mode DEFAULT 'public'::public.privacy_mode NOT NULL,
     CONSTRAINT country_code_is_uppercase CHECK ((upper(country_code) = country_code))
 );
 
@@ -1287,11 +1323,27 @@ ALTER TABLE ONLY public.auth_provider_profiles
 
 
 --
+-- Name: categories categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.categories
+    ADD CONSTRAINT categories_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: countdown_attachments countdown_attachments_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.countdown_attachments
     ADD CONSTRAINT countdown_attachments_pkey PRIMARY KEY (countdown_id, attachment_id);
+
+
+--
+-- Name: countdowns_categories countdowns_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.countdowns_categories
+    ADD CONSTRAINT countdowns_categories_pkey PRIMARY KEY (countdown_id, category_id);
 
 
 --
@@ -1578,6 +1630,13 @@ CREATE INDEX attachments_owner_id_index ON public.attachments USING btree (owner
 --
 
 CREATE INDEX auth_provider_profiles_user_id_index ON public.auth_provider_profiles USING btree (user_id);
+
+
+--
+-- Name: categories_owner_id_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX categories_owner_id_index ON public.categories USING btree (owner_id);
 
 
 --
@@ -1903,6 +1962,13 @@ CREATE INDEX users_last_seen_at_index ON public.users USING btree (last_seen_at)
 
 
 --
+-- Name: users_privacy_mode_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX users_privacy_mode_index ON public.users USING btree (privacy_mode);
+
+
+--
 -- Name: users_score_index; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -1966,6 +2032,13 @@ CREATE TRIGGER update_attachments_attached_count_trigger AFTER INSERT OR DELETE 
 
 
 --
+-- Name: countdowns_categories update_categories_countdown_count_trigger; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER update_categories_countdown_count_trigger AFTER INSERT OR DELETE OR UPDATE ON public.countdowns_categories FOR EACH ROW EXECUTE FUNCTION public.countdownplus_counter_cache('categories', 'countdown_count', 'category_id');
+
+
+--
 -- Name: countdowns update_events_countdown_count_trigger; Type: TRIGGER; Schema: public; Owner: -
 --
 
@@ -1980,10 +2053,10 @@ CREATE TRIGGER update_events_event_attachment_count_trigger AFTER INSERT OR DELE
 
 
 --
--- Name: groups update_events_group_count_trigger; Type: TRIGGER; Schema: public; Owner: -
+-- Name: group_events update_events_group_count_trigger; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER update_events_group_count_trigger AFTER INSERT OR DELETE OR UPDATE ON public.groups FOR EACH ROW EXECUTE FUNCTION public.countdownplus_counter_cache('events', 'group_count', 'event_id');
+CREATE TRIGGER update_events_group_count_trigger AFTER INSERT OR DELETE OR UPDATE ON public.group_events FOR EACH ROW EXECUTE FUNCTION public.countdownplus_counter_cache('events', 'group_count', 'event_id');
 
 
 --
@@ -2121,6 +2194,14 @@ ALTER TABLE ONLY public.auth_provider_profiles
 
 
 --
+-- Name: categories categories_owner_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.categories
+    ADD CONSTRAINT categories_owner_id_fkey FOREIGN KEY (owner_id) REFERENCES public.users(id) ON DELETE CASCADE;
+
+
+--
 -- Name: countdown_attachments countdown_attachments_attachment_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -2134,6 +2215,22 @@ ALTER TABLE ONLY public.countdown_attachments
 
 ALTER TABLE ONLY public.countdown_attachments
     ADD CONSTRAINT countdown_attachments_countdown_id_fkey FOREIGN KEY (countdown_id) REFERENCES public.countdowns(id) ON DELETE CASCADE;
+
+
+--
+-- Name: countdowns_categories countdowns_categories_category_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.countdowns_categories
+    ADD CONSTRAINT countdowns_categories_category_id_fkey FOREIGN KEY (category_id) REFERENCES public.categories(id) ON DELETE CASCADE;
+
+
+--
+-- Name: countdowns_categories countdowns_categories_countdown_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.countdowns_categories
+    ADD CONSTRAINT countdowns_categories_countdown_id_fkey FOREIGN KEY (countdown_id) REFERENCES public.countdowns(id) ON DELETE CASCADE;
 
 
 --
@@ -2412,3 +2509,6 @@ INSERT INTO public."schema_migrations" (version) VALUES (20201025181635);
 INSERT INTO public."schema_migrations" (version) VALUES (20210422104739);
 INSERT INTO public."schema_migrations" (version) VALUES (20210422110845);
 INSERT INTO public."schema_migrations" (version) VALUES (20210607142850);
+INSERT INTO public."schema_migrations" (version) VALUES (20210807100729);
+INSERT INTO public."schema_migrations" (version) VALUES (20211023183216);
+INSERT INTO public."schema_migrations" (version) VALUES (20211103004741);
