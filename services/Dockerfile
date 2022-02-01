@@ -43,4 +43,4 @@ COPY --chown=nobody:root release/countdownplus_app ./
 
 USER nobody
 
-CMD ["/app/bin/server"]
+CMD ["/app/bin/prod"]

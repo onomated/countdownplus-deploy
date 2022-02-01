@@ -1,15 +1,12 @@
 Current commit:
-graphql -> 4d2233c
+graphql -> ed931ac
 
 Recent commits:
-4d2233c This repo is no longer responsible for prod deploys.  Moved to `countdownplus-backend`
-2e1a7de *  Updated to the latest Elixir releases documentation:  https://hexdocs.pm/phoenix/releases.html#containers. Re-ran `mix phx.gen.release --docker` and massaged output for umbrella apps *  Removed old remnants of docker-compose and docker files that are now moved to the countdownplus-backend repo *  Cleaned up docker ignore to remove tons of _elixirls files *  Created new release
-c84e8e4 * Added auth module that is a module plug and also includes authentication plug functions * Moved absinthe context builder plug to plugs directory and renamed to `gql_context` * Live dashboard and oban pages now auth protected by authorization header and/or basic auth
-e17d847 * Updated to phoenix 1.6, and all other packages to the latest versions * Removed all html, live pages, and assets.  This codebase is all about API services * Root path now displays live dashboard, and oban dashboard now accessible at '/job-server' * Fixed all gql schema tests that had invalid types (wrong casing) defined.  Latest version of Absinthe now catching that
-e0923bf Upgraded to latest and greatest versions for countdownplus `context` app
+ed931ac Removed root path config and settled on moving the live dashboard to its own sub-path `/monitor`.  Also renamed `job_server` to `workers`
+6ead98f Created release with configurable root path and fixed prod execution script
+4d12317 Updated prod execution script.  Cannot have two bash `exec` commands.  Migrations are now executed without `exec` (i.e. in a sub-shell) before the phoenix server started in a replaced shell (via exec)
+eaf5d91 Made root path configurable since app is deployed in a subdirectory in prod.  Loosely followed guidelines here:  https://geoffreylessel.com/2016/hosting-a-phoenix-app-in-a-subdirectory-with-nginx/
+9167649 Generated new release with `prod` overlay script
 
 Modified files (pending commit):
  M config/dev.exs
- D rel/env.bat.eex
- D rel/env.sh.eex
- D rel/vm.args.eex
