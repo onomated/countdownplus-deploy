@@ -14,8 +14,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: ./src/config/api.js
 const api = {
-  graphqlUrl: `${"http://localhost:4000"}/gql`,
-  graphqlAdminUrl: `${"http://localhost:4000"}/gql/admin`
+  graphqlUrl: `${""}/gql`,
+  graphqlAdminUrl: `${""}/gql/admin`
 };
 ;// CONCATENATED MODULE: ./src/config/debug.js
 const debug = {

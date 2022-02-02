@@ -1,13 +1,13 @@
 
 Current commit:
-main -> e556ef7
+main -> caf31ea
 
 Recent commits:
+caf31ea * Update api url in production environment to base path * Removed unnecessary useEffect
+5e0635b Release with lint-staged disabled
 e556ef7 Disable lint staged till we can figure out how to prevent it from running in artifacts directory
 83fa1e6 Lint ignore artifacts directory
 45d74c0 New release with fix for next image
-aa9645a Install Sharp for next image functionality on production builds: https://nextjs.org/docs/api-reference/next/image#built-in-loaders
-a8ec56d New release with fixes to tailwindcss
 
 Modified files (pending commit):
 
