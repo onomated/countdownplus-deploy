@@ -1,14 +1,14 @@
 
 Current commit:
-main -> a0b00c9
+main -> e556ef7
 
 Recent commits:
-a0b00c9 Updated to tailwindcss 3.0
-8a7553a Add .eslintcache to gitignore
-c1e21ed Fixed tailwind content configuration
-3ceced0 Generated release
-a200fca * Admin graphql networking wired up * Completed implementation of index view components and hooks to support filtering and sorting * Admin list users implemented
+e556ef7 Disable lint staged till we can figure out how to prevent it from running in artifacts directory
+83fa1e6 Lint ignore artifacts directory
+45d74c0 New release with fix for next image
+aa9645a Install Sharp for next image functionality on production builds: https://nextjs.org/docs/api-reference/next/image#built-in-loaders
+a8ec56d New release with fixes to tailwindcss
 
 Modified files (pending commit):
- M package.json
+
   

@@ -34,6 +34,7 @@
     "react-dom": "17.0.2",
     "react-query": "^3.34.7",
     "react-topbar-progress-indicator": "^4.1.0",
+    "sharp": "^0.30.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
@@ -54,7 +55,7 @@
     "tailwindcss": "^3.0.17"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
+    "*.{js,ts,jsx,tsx}": "next lint --cache --fix",
     "*.{json,md,scss,less,yaml,yml}": "prettier --write"
   }
 }
