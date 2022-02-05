@@ -43,3 +43,5 @@ services:
     env_file: 
       # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
       - .env
+    environment:
+      - IMGPROXY_DEVELOPMENT_ERRORS_MODE=true
