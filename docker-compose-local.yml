@@ -38,3 +38,5 @@ services:
       - 8080:8080
     env_file:
       - app_local.env
+    environment:
+      - IMGPROXY_DEVELOPMENT_ERRORS_MODE=true
