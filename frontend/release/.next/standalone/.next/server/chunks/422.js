@@ -135,7 +135,7 @@ const submenuSpec = (title, items, key) => ({
   key: key !== null && key !== void 0 ? key : `${(0,external_lodash_.snakeCase)(title)}_submenu`
 });
 
-const menuSpec = [itemSpec('Dashboard', '', 'dashboard_page'), submenuSpec('Users', [itemSpec('List Users', 'users'), itemSpec('Merge Users', 'users/merge')]), submenuSpec('Events', [itemSpec('List Events', 'events')]), submenuSpec('Groups', [itemSpec('List Groups', 'groups')])];
+const menuSpec = [itemSpec('Dashboard', '', 'dashboard_page'), submenuSpec('Users', [itemSpec('List Users', 'users'), itemSpec('Merge Users', 'users/merge')]), submenuSpec('Events', [itemSpec('List Events', 'events')]), submenuSpec('Groups', [itemSpec('List Groups', 'groups')]), submenuSpec('Dev Tools', [itemSpec('Background Jobs', 'background-jobs'), itemSpec('Monitor', 'monitor')])];
 
 const isSubmenuSpec = spec => !!spec.items;
 

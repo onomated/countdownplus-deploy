@@ -1,13 +1,13 @@
 
 Current commit:
-main -> caf31ea
+main -> a19b39a
 
 Recent commits:
-caf31ea * Update api url in production environment to base path * Removed unnecessary useEffect
-5e0635b Release with lint-staged disabled
-e556ef7 Disable lint staged till we can figure out how to prevent it from running in artifacts directory
-83fa1e6 Lint ignore artifacts directory
-45d74c0 New release with fix for next image
+a19b39a Update favicon
+ffb23d7 Added "under construction" component
+899e33e Release with dev tools admin panel
+404bdf2 Added dev tools to Admin panel
+43bc813 Update api url path for production
 
 Modified files (pending commit):
 
