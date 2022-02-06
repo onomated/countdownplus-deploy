@@ -1,0 +1,187 @@
+{
+  "name": "Patterns Pack 1",
+  "sku": "patterns_pack_1",
+  "manifest_url": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/manifest.json",
+  "assets": {
+    "0ac3ea1c05f00495d2a4b7e31a697dbc": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/0ac3ea1c05f00495d2a4b7e31a697dbc.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/0ac3ea1c05f00495d2a4b7e31a697dbc_thumb.jpg"
+    },
+    "0c02c0ccdeceef3214707cc936a2592f": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/0c02c0ccdeceef3214707cc936a2592f.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/0c02c0ccdeceef3214707cc936a2592f_thumb.jpg"
+    },
+    "0cb18bc82478cf6678c6bf95778e6376": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/0cb18bc82478cf6678c6bf95778e6376.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/0cb18bc82478cf6678c6bf95778e6376_thumb.jpg"
+    },
+    "160e969fc8260d6a27318aa41bf38c06": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/160e969fc8260d6a27318aa41bf38c06.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/160e969fc8260d6a27318aa41bf38c06_thumb.jpg"
+    },
+    "168b327b330a2bb63d5f285d8e038225": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/168b327b330a2bb63d5f285d8e038225.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/168b327b330a2bb63d5f285d8e038225_thumb.jpg"
+    },
+    "18578bc9ef53be139c316638a60d2bd2": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/18578bc9ef53be139c316638a60d2bd2.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/18578bc9ef53be139c316638a60d2bd2_thumb.jpg"
+    },
+    "1885beee71cdd3e2f5d8548d8113d1d9": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/1885beee71cdd3e2f5d8548d8113d1d9.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/1885beee71cdd3e2f5d8548d8113d1d9_thumb.jpg"
+    },
+    "1b1baa4e1d8f4d9b9c74bd111ae28da8": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/1b1baa4e1d8f4d9b9c74bd111ae28da8.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/1b1baa4e1d8f4d9b9c74bd111ae28da8_thumb.jpg"
+    },
+    "26155b08a9c242d0d551dc4e4960f0e5": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/26155b08a9c242d0d551dc4e4960f0e5.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/26155b08a9c242d0d551dc4e4960f0e5_thumb.jpg"
+    },
+    "27ed8a06dbd4d7d14dcccf8b3da32bf5": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/27ed8a06dbd4d7d14dcccf8b3da32bf5.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/27ed8a06dbd4d7d14dcccf8b3da32bf5_thumb.jpg"
+    },
+    "407dbda7d0da89aea7e170d85756ec63": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/407dbda7d0da89aea7e170d85756ec63.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/407dbda7d0da89aea7e170d85756ec63_thumb.jpg"
+    },
+    "44d459f0d6f0d99c5153e3e14b8101cc": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/44d459f0d6f0d99c5153e3e14b8101cc.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/44d459f0d6f0d99c5153e3e14b8101cc_thumb.jpg"
+    },
+    "494c10c0afec6d7a71a780fd68b40b58": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/494c10c0afec6d7a71a780fd68b40b58.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/494c10c0afec6d7a71a780fd68b40b58_thumb.jpg"
+    },
+    "4a30ac05950a1c4a636fb3379fb7d2ca": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/4a30ac05950a1c4a636fb3379fb7d2ca.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/4a30ac05950a1c4a636fb3379fb7d2ca_thumb.jpg"
+    },
+    "4e44455d78922a875c003bf8f3a4791e": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/4e44455d78922a875c003bf8f3a4791e.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/4e44455d78922a875c003bf8f3a4791e_thumb.jpg"
+    },
+    "4e5ef7dcf8adfdad35dc450a8a273ef1": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/4e5ef7dcf8adfdad35dc450a8a273ef1.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/4e5ef7dcf8adfdad35dc450a8a273ef1_thumb.jpg"
+    },
+    "51608967cb215e0d8139a34b3373b963": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/51608967cb215e0d8139a34b3373b963.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/51608967cb215e0d8139a34b3373b963_thumb.jpg"
+    },
+    "56f6f9d9dd6b56e9f391790a8840c457": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/56f6f9d9dd6b56e9f391790a8840c457.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/56f6f9d9dd6b56e9f391790a8840c457_thumb.jpg"
+    },
+    "5f5013926e7ec2f9270d25be75724767": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/5f5013926e7ec2f9270d25be75724767.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/5f5013926e7ec2f9270d25be75724767_thumb.jpg"
+    },
+    "632cbff9336e2990b5effa858f340f44": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/632cbff9336e2990b5effa858f340f44.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/632cbff9336e2990b5effa858f340f44_thumb.jpg"
+    },
+    "6a65a4d209955bae61768b0b816ad599": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/6a65a4d209955bae61768b0b816ad599.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/6a65a4d209955bae61768b0b816ad599_thumb.jpg"
+    },
+    "724be1f71e30131fea8f145ef0f827e2": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/724be1f71e30131fea8f145ef0f827e2.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/724be1f71e30131fea8f145ef0f827e2_thumb.jpg"
+    },
+    "74d2ab00b7b0f3524f71acb20ac3c227": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/74d2ab00b7b0f3524f71acb20ac3c227.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/74d2ab00b7b0f3524f71acb20ac3c227_thumb.jpg"
+    },
+    "8e6b18f8b514d52f86375fbfbb30a63f": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/8e6b18f8b514d52f86375fbfbb30a63f.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/8e6b18f8b514d52f86375fbfbb30a63f_thumb.jpg"
+    },
+    "8f50ed33d7340b716309ea79f46afd76": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/8f50ed33d7340b716309ea79f46afd76.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/8f50ed33d7340b716309ea79f46afd76_thumb.jpg"
+    },
+    "9ab3c4fc9838095ea94184ef89d23985": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/9ab3c4fc9838095ea94184ef89d23985.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/9ab3c4fc9838095ea94184ef89d23985_thumb.jpg"
+    },
+    "a0f2e6a5a88031545305c9c3150ac63b": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a0f2e6a5a88031545305c9c3150ac63b.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a0f2e6a5a88031545305c9c3150ac63b_thumb.jpg"
+    },
+    "a2999c3b676ce9702e7261e735cd6b88": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a2999c3b676ce9702e7261e735cd6b88.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a2999c3b676ce9702e7261e735cd6b88_thumb.jpg"
+    },
+    "a53a763577fb2133f7a88d3e5530eba3": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a53a763577fb2133f7a88d3e5530eba3.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a53a763577fb2133f7a88d3e5530eba3_thumb.jpg"
+    },
+    "a68a48428e30901ae39f4aedac3ee6f3": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a68a48428e30901ae39f4aedac3ee6f3.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/a68a48428e30901ae39f4aedac3ee6f3_thumb.jpg"
+    },
+    "aae7e004aed42e3289703f33c048ea87": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/aae7e004aed42e3289703f33c048ea87.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/aae7e004aed42e3289703f33c048ea87_thumb.jpg"
+    },
+    "abad3add5cf47728bd4554df267191bf": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/abad3add5cf47728bd4554df267191bf.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/abad3add5cf47728bd4554df267191bf_thumb.jpg"
+    },
+    "af3e9e61a6c736174dd4911a8a853fb3": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/af3e9e61a6c736174dd4911a8a853fb3.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/af3e9e61a6c736174dd4911a8a853fb3_thumb.jpg"
+    },
+    "b5e9d60dafe91e826506d07d69b40dfa": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/b5e9d60dafe91e826506d07d69b40dfa.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/b5e9d60dafe91e826506d07d69b40dfa_thumb.jpg"
+    },
+    "b732927015e05298612c530e1a05c822": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/b732927015e05298612c530e1a05c822.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/b732927015e05298612c530e1a05c822_thumb.jpg"
+    },
+    "c05546c79a1947aceeb4c92734a7900d": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c05546c79a1947aceeb4c92734a7900d.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c05546c79a1947aceeb4c92734a7900d_thumb.jpg"
+    },
+    "c669b2ca29b8828835526c7aff4da595": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c669b2ca29b8828835526c7aff4da595.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c669b2ca29b8828835526c7aff4da595_thumb.jpg"
+    },
+    "c69d41fee8f874952618f96f74744409": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c69d41fee8f874952618f96f74744409.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c69d41fee8f874952618f96f74744409_thumb.jpg"
+    },
+    "c9f5e284536fc665886ceae07104ed0b": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c9f5e284536fc665886ceae07104ed0b.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/c9f5e284536fc665886ceae07104ed0b_thumb.jpg"
+    },
+    "cda49453c5202ba5ba2b5d8932e720cf": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/cda49453c5202ba5ba2b5d8932e720cf.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/cda49453c5202ba5ba2b5d8932e720cf_thumb.jpg"
+    },
+    "d0483ce51b1b32b18a7ac75edf352425": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/d0483ce51b1b32b18a7ac75edf352425.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/d0483ce51b1b32b18a7ac75edf352425_thumb.jpg"
+    },
+    "d872b4dfdbe85e70c3373bbf48bbb02a": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/d872b4dfdbe85e70c3373bbf48bbb02a.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/d872b4dfdbe85e70c3373bbf48bbb02a_thumb.jpg"
+    },
+    "daf3eeae9d3aeb5bdf9a2b9f86ba8bab": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/daf3eeae9d3aeb5bdf9a2b9f86ba8bab.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/daf3eeae9d3aeb5bdf9a2b9f86ba8bab_thumb.jpg"
+    },
+    "dccbb881f1e61c53624fee91bc6ddf8b": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/dccbb881f1e61c53624fee91bc6ddf8b.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/dccbb881f1e61c53624fee91bc6ddf8b_thumb.jpg"
+    },
+    "fcdc71852d5a93fea2e23fcdc2c25448": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/fcdc71852d5a93fea2e23fcdc2c25448.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/patterns_pack_1/fcdc71852d5a93fea2e23fcdc2c25448_thumb.jpg"
+    }
+  }
+}

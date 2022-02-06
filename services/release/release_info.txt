@@ -1,12 +1,12 @@
 Current commit:
-graphql -> ed931ac
+graphql -> f2ad3ef
 
 Recent commits:
+f2ad3ef Added image proxy and support for generating asset information for attachments
+8741010 Ensure migration jobs return expected success format.  See warnings in log:
+9fe00a9 Created new release with different services working at different sub-paths.  No index page anymore
 ed931ac Removed root path config and settled on moving the live dashboard to its own sub-path `/monitor`.  Also renamed `job_server` to `workers`
 6ead98f Created release with configurable root path and fixed prod execution script
-4d12317 Updated prod execution script.  Cannot have two bash `exec` commands.  Migrations are now executed without `exec` (i.e. in a sub-shell) before the phoenix server started in a replaced shell (via exec)
-eaf5d91 Made root path configurable since app is deployed in a subdirectory in prod.  Loosely followed guidelines here:  https://geoffreylessel.com/2016/hosting-a-phoenix-app-in-a-subdirectory-with-nginx/
-9167649 Generated new release with `prod` overlay script
 
 Modified files (pending commit):
  M config/dev.exs

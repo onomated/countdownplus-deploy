@@ -1,0 +1,207 @@
+{
+  "name": "Let's Travel",
+  "sku": "lets_travel",
+  "manifest_url": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/manifest.json",
+  "assets": {
+    "03da1205d88476612eb006372f64031a": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/03da1205d88476612eb006372f64031a.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/03da1205d88476612eb006372f64031a_thumb.jpg"
+    },
+    "06f895f840251d6ce276096ba3e165de": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/06f895f840251d6ce276096ba3e165de.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/06f895f840251d6ce276096ba3e165de_thumb.jpg"
+    },
+    "0aec66405acb467e91f6d2b126836b18": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/0aec66405acb467e91f6d2b126836b18.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/0aec66405acb467e91f6d2b126836b18_thumb.jpg"
+    },
+    "17d39ecf86f490fae7b9ea1a3c33efd0": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/17d39ecf86f490fae7b9ea1a3c33efd0.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/17d39ecf86f490fae7b9ea1a3c33efd0_thumb.jpg"
+    },
+    "1a35e0702c12aa2a7a47875ae047c2e3": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1a35e0702c12aa2a7a47875ae047c2e3.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1a35e0702c12aa2a7a47875ae047c2e3_thumb.jpg"
+    },
+    "1b50bb276eef87603669bd1de1a49278": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1b50bb276eef87603669bd1de1a49278.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1b50bb276eef87603669bd1de1a49278_thumb.jpg"
+    },
+    "1b676becd6cbeab1c5dd6f5e860af114": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1b676becd6cbeab1c5dd6f5e860af114.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1b676becd6cbeab1c5dd6f5e860af114_thumb.jpg"
+    },
+    "1f7373715d61f372a3decb0500192393": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1f7373715d61f372a3decb0500192393.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/1f7373715d61f372a3decb0500192393_thumb.jpg"
+    },
+    "20ae2f200ef6ad5c64d7c9c16cf2c30d": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/20ae2f200ef6ad5c64d7c9c16cf2c30d.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/20ae2f200ef6ad5c64d7c9c16cf2c30d_thumb.jpg"
+    },
+    "296c27b293e94ef283a948028e9cfb83": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/296c27b293e94ef283a948028e9cfb83.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/296c27b293e94ef283a948028e9cfb83_thumb.jpg"
+    },
+    "2a469337ba8dd54814314553745c7ec3": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/2a469337ba8dd54814314553745c7ec3.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/2a469337ba8dd54814314553745c7ec3_thumb.jpg"
+    },
+    "2c5efa5ae284381cb9594bfd738737ce": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/2c5efa5ae284381cb9594bfd738737ce.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/2c5efa5ae284381cb9594bfd738737ce_thumb.jpg"
+    },
+    "329b53216703232cbdb3dcec80fdf264": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/329b53216703232cbdb3dcec80fdf264.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/329b53216703232cbdb3dcec80fdf264_thumb.jpg"
+    },
+    "414ec79e2ae3493df541ac067d048ca3": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/414ec79e2ae3493df541ac067d048ca3.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/414ec79e2ae3493df541ac067d048ca3_thumb.jpg"
+    },
+    "424c3a8b4f0e989f04cc4837908f97ba": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/424c3a8b4f0e989f04cc4837908f97ba.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/424c3a8b4f0e989f04cc4837908f97ba_thumb.jpg"
+    },
+    "45eb9bd3b406f1f43ddf808e050c18bf": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/45eb9bd3b406f1f43ddf808e050c18bf.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/45eb9bd3b406f1f43ddf808e050c18bf_thumb.jpg"
+    },
+    "48b9c8787a890bbdba29214ea5922fb2": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/48b9c8787a890bbdba29214ea5922fb2.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/48b9c8787a890bbdba29214ea5922fb2_thumb.jpg"
+    },
+    "494f993188fc4d91570a200804fa65c0": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/494f993188fc4d91570a200804fa65c0.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/494f993188fc4d91570a200804fa65c0_thumb.jpg"
+    },
+    "4fd2d216d1513c0f9962904e70960b34": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/4fd2d216d1513c0f9962904e70960b34.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/4fd2d216d1513c0f9962904e70960b34_thumb.jpg"
+    },
+    "6695d4e7be0748f1b55f09f465cbf7a5": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/6695d4e7be0748f1b55f09f465cbf7a5.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/6695d4e7be0748f1b55f09f465cbf7a5_thumb.jpg"
+    },
+    "66dc8951d4e222b608cb485f61ca8708": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/66dc8951d4e222b608cb485f61ca8708.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/66dc8951d4e222b608cb485f61ca8708_thumb.jpg"
+    },
+    "6a229088695c8844f91166ac9e4d0382": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/6a229088695c8844f91166ac9e4d0382.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/6a229088695c8844f91166ac9e4d0382_thumb.jpg"
+    },
+    "761f2a160b51843ed862c5e457228018": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/761f2a160b51843ed862c5e457228018.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/761f2a160b51843ed862c5e457228018_thumb.jpg"
+    },
+    "867bef6f64e0ea21a1a92bc211eb150d": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/867bef6f64e0ea21a1a92bc211eb150d.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/867bef6f64e0ea21a1a92bc211eb150d_thumb.jpg"
+    },
+    "88978cc876cc78ef0b557c000790d69b": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/88978cc876cc78ef0b557c000790d69b.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/88978cc876cc78ef0b557c000790d69b_thumb.jpg"
+    },
+    "892c3582afa8b3e0ad3702ca5369ffeb": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/892c3582afa8b3e0ad3702ca5369ffeb.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/892c3582afa8b3e0ad3702ca5369ffeb_thumb.jpg"
+    },
+    "8bdcbb20b51ea79e8e044f8fefee60c5": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/8bdcbb20b51ea79e8e044f8fefee60c5.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/8bdcbb20b51ea79e8e044f8fefee60c5_thumb.jpg"
+    },
+    "a5aff00f10fc18e5c2db0ad86eeb6a24": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/a5aff00f10fc18e5c2db0ad86eeb6a24.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/a5aff00f10fc18e5c2db0ad86eeb6a24_thumb.jpg"
+    },
+    "a88f4cf1b43bcb2e34a0d52141dee620": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/a88f4cf1b43bcb2e34a0d52141dee620.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/a88f4cf1b43bcb2e34a0d52141dee620_thumb.jpg"
+    },
+    "abd1dc19d9c7ecbc0346fe93d71d708f": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/abd1dc19d9c7ecbc0346fe93d71d708f.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/abd1dc19d9c7ecbc0346fe93d71d708f_thumb.jpg"
+    },
+    "ac273b35c5876d79a2e47aba791db2a8": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/ac273b35c5876d79a2e47aba791db2a8.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/ac273b35c5876d79a2e47aba791db2a8_thumb.jpg"
+    },
+    "ad350274906defb69f4c69e74fbb4d93": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/ad350274906defb69f4c69e74fbb4d93.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/ad350274906defb69f4c69e74fbb4d93_thumb.jpg"
+    },
+    "b06863b71a59c451ba944d001f0e2210": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b06863b71a59c451ba944d001f0e2210.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b06863b71a59c451ba944d001f0e2210_thumb.jpg"
+    },
+    "b57ddaa994db057f80d3572fec9b8302": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b57ddaa994db057f80d3572fec9b8302.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b57ddaa994db057f80d3572fec9b8302_thumb.jpg"
+    },
+    "b6092bae3a718bd4cb2a9c90f4029188": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b6092bae3a718bd4cb2a9c90f4029188.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b6092bae3a718bd4cb2a9c90f4029188_thumb.jpg"
+    },
+    "b94f42268921381c46ba07ba7bed66b2": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b94f42268921381c46ba07ba7bed66b2.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b94f42268921381c46ba07ba7bed66b2_thumb.jpg"
+    },
+    "b996378e02c14696cb2c6006c801502b": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b996378e02c14696cb2c6006c801502b.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/b996378e02c14696cb2c6006c801502b_thumb.jpg"
+    },
+    "bc67d9c0f979996a1f576f7cba64966e": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/bc67d9c0f979996a1f576f7cba64966e.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/bc67d9c0f979996a1f576f7cba64966e_thumb.jpg"
+    },
+    "c407e67853c1f6438dc6c1aa1b7a5d01": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/c407e67853c1f6438dc6c1aa1b7a5d01.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/c407e67853c1f6438dc6c1aa1b7a5d01_thumb.jpg"
+    },
+    "c6d30e819bd3253db58296a8cab43daa": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/c6d30e819bd3253db58296a8cab43daa.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/c6d30e819bd3253db58296a8cab43daa_thumb.jpg"
+    },
+    "c98dcfc241ee66355ea3e98c97639d2c": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/c98dcfc241ee66355ea3e98c97639d2c.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/c98dcfc241ee66355ea3e98c97639d2c_thumb.jpg"
+    },
+    "cd2f4b25d30b9fe6aec082236a18bf9d": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/cd2f4b25d30b9fe6aec082236a18bf9d.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/cd2f4b25d30b9fe6aec082236a18bf9d_thumb.jpg"
+    },
+    "cef27f8d926d6bade3cc91e09b768ce3": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/cef27f8d926d6bade3cc91e09b768ce3.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/cef27f8d926d6bade3cc91e09b768ce3_thumb.jpg"
+    },
+    "d697cee1969431d8b7adc942b3fe107e": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/d697cee1969431d8b7adc942b3fe107e.png",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/d697cee1969431d8b7adc942b3fe107e_thumb.jpg"
+    },
+    "d739572c5a8d78e945031e894e052e05": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/d739572c5a8d78e945031e894e052e05.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/d739572c5a8d78e945031e894e052e05_thumb.jpg"
+    },
+    "df7e53e499ecaa727c645f7350874d91": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/df7e53e499ecaa727c645f7350874d91.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/df7e53e499ecaa727c645f7350874d91_thumb.jpg"
+    },
+    "edc7f8209f4cce2702e9768fa4eb31fa": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/edc7f8209f4cce2702e9768fa4eb31fa.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/edc7f8209f4cce2702e9768fa4eb31fa_thumb.jpg"
+    },
+    "efb2ca4131def2aaf1cceb6ad5d73e4a": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/efb2ca4131def2aaf1cceb6ad5d73e4a.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/efb2ca4131def2aaf1cceb6ad5d73e4a_thumb.jpg"
+    },
+    "efbcd22897ec552501463d262e5bc75c": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/efbcd22897ec552501463d262e5bc75c.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/efbcd22897ec552501463d262e5bc75c_thumb.jpg"
+    },
+    "f6610afa9d1a3b7c4e1d2571d58c21ad": {
+      "full": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/f6610afa9d1a3b7c4e1d2571d58c21ad.jpg",
+      "thumb": "https://storage.googleapis.com/countdownplusapp.appspot.com/packs/images/lets_travel/f6610afa9d1a3b7c4e1d2571d58c21ad_thumb.jpg"
+    }
+  }
+}
