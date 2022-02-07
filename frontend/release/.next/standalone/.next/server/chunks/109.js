@@ -3,7 +3,7 @@ exports.id = 109;
 exports.ids = [109];
 exports.modules = {
 
-/***/ 23999:
+/***/ 405:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -22,12 +22,18 @@ const api = {
 const debug = {
   enabled: "false" === 'true'
 };
+;// CONCATENATED MODULE: ./src/config/services.js
+const services = {
+  imageServerUrl: ""
+};
 ;// CONCATENATED MODULE: ./src/config/index.js
+
 
 
 const config = {
   api: api,
-  debug: debug
+  debug: debug,
+  services: services
 };
 /* harmony default export */ const src_config = (config);
 
@@ -197,8 +203,8 @@ var external_lodash_get_default = /*#__PURE__*/__webpack_require__.n(external_lo
 var external_graphql_request_ = __webpack_require__(5805);
 // EXTERNAL MODULE: external "react-query"
 var external_react_query_ = __webpack_require__(61175);
-// EXTERNAL MODULE: ./src/config/index.js + 2 modules
-var config = __webpack_require__(23999);
+// EXTERNAL MODULE: ./src/config/index.js + 3 modules
+var config = __webpack_require__(405);
 ;// CONCATENATED MODULE: ./src/services/network/index.js
 const _excluded = ["dataKey", "variables"],
       _excluded2 = ["dataKey", "variables"],
@@ -460,8 +466,8 @@ const asDateOrFallback = (x, fallback = undefined) => {
     return fallback;
   }
 };
-// EXTERNAL MODULE: ./src/stores/models/user-model.js
-var user_model = __webpack_require__(30643);
+// EXTERNAL MODULE: ./src/stores/models/user-model.js + 1 modules
+var user_model = __webpack_require__(70499);
 ;// CONCATENATED MODULE: ./src/stores/session-store.js
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -664,8 +670,8 @@ class RootStore {
 }
 
 /* harmony default export */ const root_store = (RootStore);
-// EXTERNAL MODULE: ./src/config/index.js + 2 modules
-var config = __webpack_require__(23999);
+// EXTERNAL MODULE: ./src/config/index.js + 3 modules
+var config = __webpack_require__(405);
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(20997);
 ;// CONCATENATED MODULE: ./src/stores/index.js
@@ -721,18 +727,70 @@ const useStore = key => {
 
 /***/ }),
 
-/***/ 30643:
+/***/ 70499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74146);
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(date_fns__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36211);
-/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mobx__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utils_string_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(453);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ user_model)
+});
+
+// EXTERNAL MODULE: external "date-fns"
+var external_date_fns_ = __webpack_require__(74146);
+// EXTERNAL MODULE: external "mobx"
+var external_mobx_ = __webpack_require__(36211);
+// EXTERNAL MODULE: ./src/config/index.js + 3 modules
+var config = __webpack_require__(405);
+// EXTERNAL MODULE: ./src/utils/string-utils.js
+var string_utils = __webpack_require__(453);
+;// CONCATENATED MODULE: ./src/stores/models/attachment-model.js
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+class AttachmentModel {
+  static wrap(plain, opts = {}) {
+    if (!plain) return plain;
+    if (Array.isArray(plain)) return plain.map(obj => this.wrap(obj, opts));
+    return new this(plain, opts);
+  }
+
+  constructor(obj, opts = {}) {
+    _defineProperty(this, "id", void 0);
+
+    _defineProperty(this, "type", void 0);
+
+    _defineProperty(this, "thumbnailAsset", void 0);
+
+    const {
+      observable = true
+    } = opts;
+    if (observable) (0,external_mobx_.makeAutoObservable)(this);
+    this.fromPlain(obj, opts);
+  }
+
+  fromPlain(obj, _opts) {
+    const attachment = obj.attachment || obj;
+    Object.assign(this, attachment);
+    const type = obj.profileAttachmentType;
+    if (type) this.type = type;
+    return this;
+  }
+
+}
+
+/* harmony default export */ const attachment_model = (AttachmentModel);
+;// CONCATENATED MODULE: ./src/stores/models/user-model.js
+const _excluded = ["userAttachments"];
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function user_model_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -741,45 +799,60 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 class UserModel {
   static wrap(plain, opts = {}) {
     if (!plain) return plain;
-    if (Array.isArray(plain)) return plain.map(user => UserModel.wrap(user, opts));
-    return new UserModel(plain, opts);
+    if (Array.isArray(plain)) return plain.map(obj => this.wrap(obj, opts));
+    return new this(plain, opts);
   }
 
-  constructor(user, {
-    observable = true
-  } = {}) {
-    _defineProperty(this, "id", void 0);
+  constructor(obj, opts = {}) {
+    user_model_defineProperty(this, "id", void 0);
 
-    _defineProperty(this, "accountType", void 0);
+    user_model_defineProperty(this, "accountType", void 0);
 
-    _defineProperty(this, "firstName", void 0);
+    user_model_defineProperty(this, "firstName", void 0);
 
-    _defineProperty(this, "lastName", void 0);
+    user_model_defineProperty(this, "lastName", void 0);
 
-    _defineProperty(this, "username", void 0);
+    user_model_defineProperty(this, "username", void 0);
 
-    _defineProperty(this, "dob", void 0);
+    user_model_defineProperty(this, "dob", void 0);
 
-    _defineProperty(this, "pronoun", void 0);
+    user_model_defineProperty(this, "pronoun", void 0);
 
-    _defineProperty(this, "countryCode", void 0);
+    user_model_defineProperty(this, "countryCode", void 0);
 
-    _defineProperty(this, "followerCount", void 0);
+    user_model_defineProperty(this, "followerCount", void 0);
 
-    _defineProperty(this, "lastSeenAt", void 0);
+    user_model_defineProperty(this, "lastSeenAt", void 0);
 
-    if (observable) (0,mobx__WEBPACK_IMPORTED_MODULE_1__.makeAutoObservable)(this);
-    this.fromPlain(user);
+    user_model_defineProperty(this, "attachments", void 0);
+
+    const {
+      observable = true
+    } = opts;
+    if (observable) (0,external_mobx_.makeAutoObservable)(this);
+    this.fromPlain(obj, opts);
   }
 
-  fromPlain(user) {
-    Object.assign(this, user);
+  fromPlain(obj, opts = {}) {
+    const {
+      userAttachments
+    } = obj,
+          rest = _objectWithoutProperties(obj, _excluded);
+
+    Object.assign(this, rest);
+    const nodes = userAttachments === null || userAttachments === void 0 ? void 0 : userAttachments.nodes;
+
+    if (nodes) {
+      this.attachments = attachment_model.wrap(nodes, opts);
+    }
+
+    return this;
   }
 
   get avatarLetters() {
-    var _this$firstName, _this$firstName$charA;
+    var _this$username, _this$username$charAt;
 
-    return (_this$firstName = this.firstName) === null || _this$firstName === void 0 ? void 0 : (_this$firstName$charA = _this$firstName.charAt(0)) === null || _this$firstName$charA === void 0 ? void 0 : _this$firstName$charA.toUpperCase();
+    return (_this$username = this.username) === null || _this$username === void 0 ? void 0 : (_this$username$charAt = _this$username.charAt(0)) === null || _this$username$charAt === void 0 ? void 0 : _this$username$charAt.toUpperCase();
   }
 
   get name() {
@@ -787,45 +860,73 @@ class UserModel {
   }
 
   get dateOfBirth() {
-    return this.dob ? (0,date_fns__WEBPACK_IMPORTED_MODULE_0__.parseISO)(this.dob) : undefined;
+    return this.dob ? (0,external_date_fns_.parseISO)(this.dob) : undefined;
   }
 
   get birthday() {
-    return this.dob ? (0,date_fns__WEBPACK_IMPORTED_MODULE_0__.format)(this.dateOfBirth, 'MMM d, y') : undefined;
+    return this.dob ? (0,external_date_fns_.format)(this.dateOfBirth, 'MMM d, y') : undefined;
   }
 
   get age() {
-    return this.dob ? `${(0,date_fns__WEBPACK_IMPORTED_MODULE_0__.differenceInYears)(new Date(), this.dateOfBirth)} years old` : undefined;
+    return this.dob ? `${(0,external_date_fns_.differenceInYears)(new Date(), this.dateOfBirth)} years old` : undefined;
   }
 
   get pronounSymbol() {
     switch (this.pronoun) {
       case 'MALE':
-        return '♂️';
+        return '♂️(M)';
 
       case 'FEMALE':
-        return '♀️';
+        return '♀️(F)';
 
       default:
         return '';
     }
   }
 
+  get avatarUrl() {
+    if (this._avatarUrl === undefined) {
+      var _this$getAttachmentOf, _this$getAttachmentOf2;
+
+      const url = (_this$getAttachmentOf = this.getAttachmentOfType('AVATAR')) === null || _this$getAttachmentOf === void 0 ? void 0 : (_this$getAttachmentOf2 = _this$getAttachmentOf.thumbnailAsset) === null || _this$getAttachmentOf2 === void 0 ? void 0 : _this$getAttachmentOf2.url;
+      this._avatarUrl = url || null;
+    }
+
+    return this._avatarUrl ? `${config/* default.services.imageServerUrl */.Z.services.imageServerUrl}${this._avatarUrl}` : undefined;
+  }
+
+  get coverUrl() {
+    if (this._coverUrl === undefined) {
+      var _this$getAttachmentOf3, _this$getAttachmentOf4;
+
+      const url = (_this$getAttachmentOf3 = this.getAttachmentOfType('COVER')) === null || _this$getAttachmentOf3 === void 0 ? void 0 : (_this$getAttachmentOf4 = _this$getAttachmentOf3.coverAsset) === null || _this$getAttachmentOf4 === void 0 ? void 0 : _this$getAttachmentOf4.url;
+      this._coverUrl = url || null;
+    }
+
+    return this._coverUrl ? `${config/* default.services.imageServerUrl */.Z.services.imageServerUrl}${this._coverUrl}` : undefined;
+  }
+
   get countryFlagEmoji() {
-    return this.countryCode ? (0,_utils_string_utils__WEBPACK_IMPORTED_MODULE_2__/* .getFlagEmoji */ .b)(this.countryCode) : undefined;
+    return this.countryCode ? (0,string_utils/* getFlagEmoji */.b)(this.countryCode) : undefined;
   }
 
   get lastSeenDate() {
-    return this.lastSeenAt ? (0,date_fns__WEBPACK_IMPORTED_MODULE_0__.parseISO)(this.lastSeenAt) : undefined;
+    return this.lastSeenAt ? (0,external_date_fns_.parseISO)(this.lastSeenAt) : undefined;
   }
 
   get lastSeenDateText() {
-    return this.lastSeenAt ? (0,date_fns__WEBPACK_IMPORTED_MODULE_0__.format)(this.lastSeenDate, 'MMM d, y') : undefined;
+    return this.lastSeenAt ? (0,external_date_fns_.format)(this.lastSeenDate, 'MMM d, y') : undefined;
+  }
+
+  getAttachmentOfType(type) {
+    var _this$attachments;
+
+    return (_this$attachments = this.attachments) === null || _this$attachments === void 0 ? void 0 : _this$attachments.find(a => a.type === type);
   }
 
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UserModel);
+/* harmony default export */ const user_model = (UserModel);
 
 /***/ }),
 

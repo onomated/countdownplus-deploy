@@ -90,7 +90,8 @@ const AdminMenu = (0,external_mobx_react_lite_.observer)(() => {
           overlay: /*#__PURE__*/jsx_runtime_.jsx(AdminActionsMenu, {}),
           placement: "bottomRight",
           children: /*#__PURE__*/jsx_runtime_.jsx(UserAvatar/* default */.Z, {
-            letters: user.avatarLetters
+            user: user,
+            size: "sm"
           })
         })
       }, "admin-menu-avatar")

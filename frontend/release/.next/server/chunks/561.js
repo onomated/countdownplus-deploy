@@ -529,7 +529,6 @@ var divider_default = /*#__PURE__*/__webpack_require__.n(divider_);
 
 
 
-
 const {
   Text
 } = (typography_default());
@@ -551,33 +550,25 @@ const UserDrawer = (0,external_mobx_react_lite_.observer)(({
       onSignOut: onSignOut
     }),
     children: [/*#__PURE__*/jsx_runtime_.jsx(UserInfoHeader, {
-      name: user.name,
-      username: user.username,
-      avatarLetters: user.avatarLetters,
+      user: user,
       admin: sessionStore.userCanAdmin
     }), /*#__PURE__*/jsx_runtime_.jsx((divider_default()), {}), /*#__PURE__*/jsx_runtime_.jsx(DrawerLinks, {})]
   });
 });
 
 const UserInfoHeader = ({
-  imageLink,
-  name,
-  username,
-  avatarLetters,
+  user,
   admin
 }) => /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
   className: "flex flex-col py-4 items-center",
-  children: [imageLink ? /*#__PURE__*/jsx_runtime_.jsx(UserAvatar/* default */.Z, {
-    size: 88,
-    src: imageLink
-  }) : /*#__PURE__*/jsx_runtime_.jsx(UserAvatar/* default */.Z, {
-    size: 88,
-    letters: avatarLetters
+  children: [/*#__PURE__*/jsx_runtime_.jsx(UserAvatar/* default */.Z, {
+    user: user,
+    size: "lg"
   }), /*#__PURE__*/jsx_runtime_.jsx(Text, {
     className: "font-bold text-lg mt-4",
-    children: name
+    children: user.name
   }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(Text, {
-    children: ["@", username]
+    children: ["@", user.username]
   }), /*#__PURE__*/jsx_runtime_.jsx(AutoLink/* default */.Z, {
     href: "/me",
     children: /*#__PURE__*/jsx_runtime_.jsx((button_default()), {
@@ -679,7 +670,6 @@ const SignOutControl = ({
 
 
 
-
 const {
   Text: MainActionPanel_Text
 } = (typography_default());
@@ -722,8 +712,7 @@ const MaxWidthText = external_tailwind_styled_components_default()(MainActionPan
 `;
 
 const UserDrawerToggle = ({
-  username,
-  avatarLetters,
+  user,
   showOpenIndicator
 }) => {
   const {
@@ -738,11 +727,12 @@ const UserDrawerToggle = ({
       style: {
         cursor: 'pointer'
       },
-      children: [username && /*#__PURE__*/(0,jsx_runtime_.jsxs)(MaxWidthText, {
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)(MaxWidthText, {
         ellipsis: true,
-        children: ["@", username]
+        children: ["@", user.username]
       }), /*#__PURE__*/jsx_runtime_.jsx(UserAvatar/* default */.Z, {
-        letters: avatarLetters
+        user: user,
+        size: "sm"
       }), showOpenIndicator && /*#__PURE__*/jsx_runtime_.jsx(lib.CaretRightOutlined, {})]
     }), /*#__PURE__*/jsx_runtime_.jsx(PageHeader_UserDrawer, {
       visible: visible,
@@ -779,7 +769,7 @@ const MinimizedControlPanel = (0,external_mobx_react_lite_.observer)(({
   const sessionStore = (0,stores/* useStore */.oR)('session');
   if (sessionStore.isLoading) return null;
   return sessionStore.userIsLoggedIn ? /*#__PURE__*/jsx_runtime_.jsx(UserDrawerToggle, {
-    avatarLetters: sessionStore.user.avatarLetters,
+    user: sessionStore.user,
     showOpenIndicator: true
   }) : /*#__PURE__*/jsx_runtime_.jsx(PageHeader_MinimizedMenu, {
     menuKey: "auth",
@@ -809,8 +799,7 @@ const ControlPanel = (0,external_mobx_react_lite_.observer)(() => {
   const sessionStore = (0,stores/* useStore */.oR)('session');
   if (sessionStore.isLoading) return null;
   return sessionStore.userIsLoggedIn ? /*#__PURE__*/jsx_runtime_.jsx(UserDrawerToggle, {
-    username: sessionStore.user.username,
-    avatarLetters: sessionStore.user.avatarLetters
+    user: sessionStore.user
   }) : /*#__PURE__*/jsx_runtime_.jsx(ControlPanelUnauthed, {});
 });
 

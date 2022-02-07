@@ -13,11 +13,19 @@ exports.modules = {
 /* harmony import */ var antd_lib_avatar_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_avatar_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(45998);
 /* harmony import */ var antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_image_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(47811);
+/* harmony import */ var antd_lib_image_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_image_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18070);
+/* harmony import */ var antd_lib_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_image__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(20997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
 
 
-const _excluded = ["children", "letters", "color"];
+
+
+const _excluded = ["user", "size"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -31,31 +39,72 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 
 
+
 const resolveCssColor = color => {
   return color ? color : 'var(--primary-color)';
 };
 
+const resolveSize = size => {
+  if (size && Number.isInteger(size)) return size;
+
+  switch (size) {
+    case 'xs':
+      return 32;
+
+    case 'sm':
+      return 40;
+
+    case 'lg':
+      return 88;
+
+    case 'xl':
+      return 100;
+
+    default:
+      // i.e. md
+      return 58;
+  }
+};
+
 const UserAvatar = _ref => {
   let {
-    children,
-    letters,
-    color
+    user,
+    size
   } = _ref,
       rest = _objectWithoutProperties(_ref, _excluded);
 
+  const {
+    0: imageLoadFailed,
+    1: setImageLoadFailed
+  } = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(false);
+  const resolvedSize = resolveSize(size);
+  const resolvedLetters = user === null || user === void 0 ? void 0 : user.avatarLetters;
+  const resolvedColor = resolveCssColor(null);
   const style = {
-    backgroundColor: resolveCssColor(color)
+    backgroundColor: resolvedColor
   };
+  style.fontSize = `${Math.floor(resolvedSize / 2)}px`;
+  let src = undefined;
 
-  if (rest.size && Number.isInteger(rest.size)) {
-    style.fontSize = `${Math.floor(rest.size / 2)}px`;
+  if (user !== null && user !== void 0 && user.avatarUrl && !imageLoadFailed) {
+    src = /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx((antd_lib_image__WEBPACK_IMPORTED_MODULE_3___default()), {
+      alt: `${user.username} profile image`,
+      src: user.avatarUrl,
+      width: resolvedSize,
+      preview: false,
+      onError: () => {
+        setImageLoadFailed(true);
+      }
+    });
   }
 
-  return /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx((antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default()), _objectSpread(_objectSpread({
+  return /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx((antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default()), _objectSpread(_objectSpread({
     className: "flex-none",
-    style: style
+    src: src,
+    style: style,
+    size: resolvedSize
   }, rest), {}, {
-    children: letters || children
+    children: resolvedLetters
   }));
 };
 
