@@ -1,12 +1,12 @@
 Current commit:
-graphql -> f2ad3ef
+graphql -> 8ebfc75
 
 Recent commits:
+8ebfc75 Addressed bug with `img_proxy` not working.  All size values must be integers
 f2ad3ef Added image proxy and support for generating asset information for attachments
 8741010 Ensure migration jobs return expected success format.  See warnings in log:
 9fe00a9 Created new release with different services working at different sub-paths.  No index page anymore
 ed931ac Removed root path config and settled on moving the live dashboard to its own sub-path `/monitor`.  Also renamed `job_server` to `workers`
-6ead98f Created release with configurable root path and fixed prod execution script
 
 Modified files (pending commit):
  M config/dev.exs
