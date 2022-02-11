@@ -1,13 +1,13 @@
 
 Current commit:
-main -> 07da65b
+main -> 69c3182
 
 Recent commits:
+69c3182 Updated user fragment to account for the fact that user attachments are no longer paginated
+e9938b9 Release with user images
 07da65b Added user avatar images.  Introduced attachment model
 4d77be0 Release with under construction graphic to begin showcasing the site publically
 a19b39a Update favicon
-ffb23d7 Added "under construction" component
-899e33e Release with dev tools admin panel
 
 Modified files (pending commit):
 

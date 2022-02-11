@@ -840,10 +840,9 @@ class UserModel {
           rest = _objectWithoutProperties(obj, _excluded);
 
     Object.assign(this, rest);
-    const nodes = userAttachments === null || userAttachments === void 0 ? void 0 : userAttachments.nodes;
 
-    if (nodes) {
-      this.attachments = attachment_model.wrap(nodes, opts);
+    if (userAttachments) {
+      this.attachments = attachment_model.wrap(userAttachments, opts);
     }
 
     return this;
