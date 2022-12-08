@@ -100,13 +100,14 @@ __webpack_require__.d(__webpack_exports__, {
   "PY": () => (/* reexport */ LocalStorageProvider),
   "k7": () => (/* reexport */ NetworkClientProvider),
   "CF": () => (/* reexport */ useAdminGraphQLConnectionQuery),
+  "N1": () => (/* reexport */ useAdminGraphQLQuery),
   "Rx": () => (/* reexport */ useAdminGraphqlClient),
   "b_": () => (/* reexport */ useGraphQLClient),
   "C0": () => (/* reexport */ useGraphQLMutation),
   "_": () => (/* reexport */ useLocalStorage)
 });
 
-// UNUSED EXPORTS: useAdminGraphQLMutation, useAdminGraphQLQuery, useGraphQLConnectionQuery, useGraphQLQuery
+// UNUSED EXPORTS: useAdminGraphQLMutation, useGraphQLConnectionQuery, useGraphQLQuery
 
 // EXTERNAL MODULE: external "localforage"
 var external_localforage_ = __webpack_require__(3182);
@@ -763,6 +764,8 @@ class AttachmentModel {
 
     _defineProperty(this, "thumbnailAsset", void 0);
 
+    _defineProperty(this, "cardCoverAsset", void 0);
+
     const {
       observable = true
     } = opts;
@@ -821,6 +824,8 @@ class UserModel {
     user_model_defineProperty(this, "countryCode", void 0);
 
     user_model_defineProperty(this, "followerCount", void 0);
+
+    user_model_defineProperty(this, "followingCount", void 0);
 
     user_model_defineProperty(this, "lastSeenAt", void 0);
 
@@ -898,7 +903,7 @@ class UserModel {
     if (this._coverUrl === undefined) {
       var _this$getAttachmentOf3, _this$getAttachmentOf4;
 
-      const url = (_this$getAttachmentOf3 = this.getAttachmentOfType('COVER')) === null || _this$getAttachmentOf3 === void 0 ? void 0 : (_this$getAttachmentOf4 = _this$getAttachmentOf3.coverAsset) === null || _this$getAttachmentOf4 === void 0 ? void 0 : _this$getAttachmentOf4.url;
+      const url = (_this$getAttachmentOf3 = this.getAttachmentOfType('COVER')) === null || _this$getAttachmentOf3 === void 0 ? void 0 : (_this$getAttachmentOf4 = _this$getAttachmentOf3.cardCoverAsset) === null || _this$getAttachmentOf4 === void 0 ? void 0 : _this$getAttachmentOf4.url;
       this._coverUrl = url || null;
     }
 

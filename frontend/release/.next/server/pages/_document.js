@@ -122,6 +122,13 @@ module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
+/***/ 78524:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/is-plain-object.js");
+
+/***/ }),
+
 /***/ 59232:
 /***/ ((module) => {
 

@@ -511,7 +511,10 @@ var divider_style = __webpack_require__(56120);
 // EXTERNAL MODULE: external "antd/lib/divider"
 var divider_ = __webpack_require__(2278);
 var divider_default = /*#__PURE__*/__webpack_require__.n(divider_);
+// EXTERNAL MODULE: ./src/components/UnstyledAnchor/index.js
+var UnstyledAnchor = __webpack_require__(32368);
 ;// CONCATENATED MODULE: ./src/components/PageHeader/UserDrawer.js
+
 
 
 
@@ -629,10 +632,14 @@ const UserDrawerFooter = ({
     className: "flex flex-row text-sm justify-evenly",
     children: [/*#__PURE__*/jsx_runtime_.jsx(AutoLink/* default */.Z, {
       href: "/privacy",
-      children: "Privacy Policy"
+      children: /*#__PURE__*/jsx_runtime_.jsx(UnstyledAnchor/* default */.Z, {
+        children: "Privacy Policy"
+      })
     }), /*#__PURE__*/jsx_runtime_.jsx(AutoLink/* default */.Z, {
       href: "/terms",
-      children: "Terms of Service"
+      children: /*#__PURE__*/jsx_runtime_.jsx(UnstyledAnchor/* default */.Z, {
+        children: "Terms of Service"
+      })
     })]
   })]
 });

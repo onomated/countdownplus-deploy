@@ -44,7 +44,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = isError;
 exports.getProperError = getProperError;
-var _isPlainObject = __webpack_require__(82288);
+var _isPlainObject = __webpack_require__(78524);
 function isError(err) {
     return typeof err === 'object' && err !== null && 'name' in err && 'message' in err;
 }
@@ -57,30 +57,6 @@ function getProperError(err) {
 }
 
 //# sourceMappingURL=is-error.js.map
-
-/***/ }),
-
-/***/ 82288:
-/***/ ((__unused_webpack_module, exports) => {
-
-
-Object.defineProperty(exports, "__esModule", ({
-    value: true
-}));
-exports.getObjectClassLabel = getObjectClassLabel;
-exports.isPlainObject = isPlainObject;
-function getObjectClassLabel(value) {
-    return Object.prototype.toString.call(value);
-}
-function isPlainObject(value) {
-    if (getObjectClassLabel(value) !== '[object Object]') {
-        return false;
-    }
-    const prototype = Object.getPrototypeOf(value);
-    return prototype === null || prototype === Object.prototype;
-}
-
-//# sourceMappingURL=is-plain-object.js.map
 
 /***/ })
 
