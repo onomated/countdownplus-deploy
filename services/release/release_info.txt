@@ -1,12 +1,12 @@
 Current commit:
-develop -> d0d724f
+develop -> 3cd25a79
 
 Recent commits:
-d0d724f User attachments are now preloaded in User queries since we always need the user avatar
-4e471a7 Fixed test failing in cicd
-d9072aa Fixed linter warnings for tuples when using guards.  Switched to pattern matching
-24a0c88 Updated cicd test command
-1a301f8 Deleted unused test utils and updated cicd tests to execute a 2nd run to catch intermittent errors
+3cd25a79 Fixed bug in legacy migrator erroring due to string keys as opposed to atom keys
+c87da52a * Updated to latest dependencies:     * Oban changes:         - https://hexdocs.pm/oban/2.13.6/v2-11.html         - https://hexdocs.pm/oban/2.13.6/v2-12.html * Ensure all migration statements include `down` statements for rollback operation
+20c7ec26 -  Upgraded to the latest phoenix version -  Migrated from Bamboo to Swoosh since it is officially recommended
+de86252d Started on frontend_schema tests to ensure public gql edges work as required
+93e8727b Added graphql implementation for countries and states
 
 Modified files (pending commit):
- M config/dev.exs
+
