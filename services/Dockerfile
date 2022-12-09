@@ -16,7 +16,7 @@
 #   - Ex: hexpm/elixir:1.12.2-erlang-24.0.5-debian-bullseye-20210902-slim
 #
 
-ARG RUNNER_IMAGE="debian:bullseye-20210902-slim"
+ARG RUNNER_IMAGE="debian:bullseye-20221004-slim"
 
 FROM ${RUNNER_IMAGE}
 

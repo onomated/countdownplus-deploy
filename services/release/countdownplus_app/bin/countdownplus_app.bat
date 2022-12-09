@@ -8,13 +8,13 @@ popd
 
 if not defined RELEASE_NAME (set RELEASE_NAME=countdownplus_app)
 if not defined RELEASE_VSN (for /f "tokens=1,2" %%K in ('type "!RELEASE_ROOT!\releases\start_erl.data"') do (set ERTS_VSN=%%K) && (set RELEASE_VSN=%%L))
-if not defined RELEASE_MODE (set RELEASE_MODE=embedded)
 if not defined RELEASE_PROG (set RELEASE_PROG=%~nx0)
 set RELEASE_COMMAND=%~1
 set REL_VSN_DIR=!RELEASE_ROOT!\releases\!RELEASE_VSN!
 call "!REL_VSN_DIR!\env.bat"
 
 if not defined RELEASE_COOKIE (set /p RELEASE_COOKIE=<!RELEASE_ROOT!\releases\COOKIE)
+if not defined RELEASE_MODE (set RELEASE_MODE=embedded)
 if not defined RELEASE_NODE (set RELEASE_NODE=!RELEASE_NAME!)
 if not defined RELEASE_TMP (set RELEASE_TMP=!RELEASE_ROOT!\tmp)
 if not defined RELEASE_VM_ARGS (set RELEASE_VM_ARGS=!REL_VSN_DIR!\vm.args)
