@@ -1,12 +1,12 @@
 Current commit:
-develop -> 611b4113
+develop -> 1cf388e
 
 Recent commits:
-611b4113 Updated to the latest and greatest elixir in docker build script
-9de0e82b New release with latest phoenix and fix for legacy migrator
-3cd25a79 Fixed bug in legacy migrator erroring due to string keys as opposed to atom keys
-c87da52a * Updated to latest dependencies:     * Oban changes:         - https://hexdocs.pm/oban/2.13.6/v2-11.html         - https://hexdocs.pm/oban/2.13.6/v2-12.html * Ensure all migration statements include `down` statements for rollback operation
-20c7ec26 -  Upgraded to the latest phoenix version -  Migrated from Bamboo to Swoosh since it is officially recommended
+1cf388e Release with latest elixir/erlang/debian bullseye package
+611b411 Updated to the latest and greatest elixir in docker build script
+9de0e82 New release with latest phoenix and fix for legacy migrator
+3cd25a7 Fixed bug in legacy migrator erroring due to string keys as opposed to atom keys
+c87da52 * Updated to latest dependencies:     * Oban changes:         - https://hexdocs.pm/oban/2.13.6/v2-11.html         - https://hexdocs.pm/oban/2.13.6/v2-12.html * Ensure all migration statements include `down` statements for rollback operation
 
 Modified files (pending commit):
 
