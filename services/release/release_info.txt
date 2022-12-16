@@ -1,12 +1,12 @@
 Current commit:
-develop -> 368649d
+develop -> 31796a5
 
 Recent commits:
+31796a5 Fixed bug with migration failing where there are recurrence rules
+373e91a Release fixing more migration issues due to string keys vs atom keys
 368649d Ensure embedded model hierarchy is atomized during legacy migrate
 dbb45df Release built on intel processor to avoid exec format error
 1cf388e Release with latest elixir/erlang/debian bullseye package
-611b411 Updated to the latest and greatest elixir in docker build script
-9de0e82 New release with latest phoenix and fix for legacy migrator
 
 Modified files (pending commit):
 
