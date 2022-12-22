@@ -1,12 +1,12 @@
 Current commit:
-develop -> 7dbcb77
+develop -> edae8b9
 
 Recent commits:
+edae8b9 Removed errant `dbg`
+02eae57 Legacy event migration now casting to convert raw fields to representative types prior to mutating in db
+c157830 Use correct changeset function for legacy migrate create operation
+1913246 Release for legacy migrate bug with theme background getting position data and countdown data not being casted to correct format
 7dbcb77 Addressed legacy migrate bug with theme backgrounds getting position data vs background data and countdown data not being casted to correct format before insert or update
-ef9f340 Release with recurrence rule fix
-31796a5 Fixed bug with migration failing where there are recurrence rules
-373e91a Release fixing more migration issues due to string keys vs atom keys
-368649d Ensure embedded model hierarchy is atomized during legacy migrate
 
 Modified files (pending commit):
 
