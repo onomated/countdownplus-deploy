@@ -1,12 +1,12 @@
 Current commit:
-develop -> 31796a5
+develop -> 7dbcb77
 
 Recent commits:
+7dbcb77 Addressed legacy migrate bug with theme backgrounds getting position data vs background data and countdown data not being casted to correct format before insert or update
+ef9f340 Release with recurrence rule fix
 31796a5 Fixed bug with migration failing where there are recurrence rules
 373e91a Release fixing more migration issues due to string keys vs atom keys
 368649d Ensure embedded model hierarchy is atomized during legacy migrate
-dbb45df Release built on intel processor to avoid exec format error
-1cf388e Release with latest elixir/erlang/debian bullseye package
 
 Modified files (pending commit):
 
