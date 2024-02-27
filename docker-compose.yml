@@ -4,8 +4,8 @@ services:
   # Nginx reverse proxy
   nginx:
     depends_on:
-      - frontend
-      - services
+      # - web
+      - backend
       - imgproxy
     restart: always # Essential since it routes traffic to our entire app
     build: ./nginx
@@ -14,32 +14,35 @@ services:
     volumes: 
       # https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.dc-customized-logging
       - "/var/log/eb-docker/containers/nginx:/var/log/nginx"
-
-  # Frontend
-  frontend:
-    build:
-      context: ./frontend
-    ports:
-      - 3000:3000
-    env_file:
-      # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
-      - .env
   
   # Elixir app
-  services:
-    build: 
-      context: ./services
-    ports: 
-      - 4000:4000
+  backend:
+    image: ghcr.io/onomated/countdownplus/countdownplus-elixir:latest
+    expose:
+      - "4000"
     env_file: 
       # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
       - .env
-  
+
   # Imgproxy
   imgproxy:
     image: darthsim/imgproxy
-    ports:
-      - 8080:8080
-    env_file: 
+    expose:
+      - "8080"
+    env_file:
       # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
       - .env
+
+  # NextJS app
+  # web:
+  #   image: ghcr.io/onomated/countdownplus/countdownplus-web:latest
+  #   depends_on:
+  #     - backend
+  #     - imgproxy
+  #   expose:
+  #     - "3000"
+  #   environment:
+  #     - PORT=3000
+  #   env_file:
+  #     # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
+  #     - .env

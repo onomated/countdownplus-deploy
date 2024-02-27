@@ -1,3 +1,0 @@
-#!/bin/sh
-cd -P -- "$(dirname -- "$0")"
-exec ./countdownplus_app eval Countdownplus.ReleaseTasks.migrate

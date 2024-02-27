@@ -1,1 +1,0 @@
-call "%~dp0\countdownplus_app" eval CountdownplusWeb.ReleaseTasks.migrate
