@@ -18,8 +18,10 @@ services:
   # Elixir app
   backend:
     image: ghcr.io/onomated/countdownplus/countdownplus-elixir:latest
-    expose:
-      - "4000"
+    ports:
+      - 4000:4000
+    environment:
+      - PORT=4000
     env_file: 
       # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
       - .env
@@ -27,8 +29,8 @@ services:
   # Imgproxy
   imgproxy:
     image: darthsim/imgproxy
-    expose:
-      - "8080"
+    ports:
+      - 8080:8080
     env_file:
       # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
       - .env
@@ -39,8 +41,8 @@ services:
   #   depends_on:
   #     - backend
   #     - imgproxy
-  #   expose:
-  #     - "3000"
+  #   ports:
+  #     - 3000:3000
   #   environment:
   #     - PORT=3000
   #   env_file:

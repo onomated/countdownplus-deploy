@@ -18,14 +18,16 @@ services:
     build: ../countdownplus-elixir/artifacts/releases/prod/countdownplus_app
     ports:
       - 4000:4000
+    environment:
+      - PORT=4000
     env_file:
       - app_local.env
 
   # Imgproxy
   imgproxy:
     image: darthsim/imgproxy
-    expose:
-      - "8080"
+    ports:
+      - 8080:8080
     environment:
       - IMGPROXY_DEVELOPMENT_ERRORS_MODE=true
     env_file:
@@ -38,8 +40,8 @@ services:
   #   depends_on:
   #     - backend
   #     - imgproxy
-  #   expose:
-  #     - "3000"
+  #   ports:
+  #     - 3000:3000
   #   environment:
   #     - PORT=3000
   #   env_file:
