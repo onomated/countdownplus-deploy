@@ -16,8 +16,8 @@ services:
   backend:
     # image: ghcr.io/onomated/countdownplus/countdownplus-elixir:latest
     build: ../countdownplus-elixir/artifacts/releases/prod/countdownplus_app
-    ports:
-      - 4000:4000
+    expose:
+      - "4000"
     environment:
       - PORT=4000
     env_file:
@@ -26,8 +26,8 @@ services:
   # Imgproxy
   imgproxy:
     image: darthsim/imgproxy
-    ports:
-      - 8080:8080
+    expose:
+      - "8080"
     environment:
       - IMGPROXY_DEVELOPMENT_ERRORS_MODE=true
     env_file:
@@ -40,8 +40,8 @@ services:
   #   depends_on:
   #     - backend
   #     - imgproxy
-  #   ports:
-  #     - 3000:3000
+  #   expose:
+  #     - "3000"
   #   environment:
   #     - PORT=3000
   #   env_file:
