@@ -4,7 +4,7 @@ env:
   APP_ENV: prod
   AWS_REGION: us-east-1
   BEANSTALK_APP_NAME: Countdownplus
-  BEANSTALK_ENV_NAME: countdownplus
+  BEANSTALK_ENV_NAME: cplus-prod-1
 
 on:
   release:
