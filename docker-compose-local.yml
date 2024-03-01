@@ -34,15 +34,15 @@ services:
       - app_local.env
 
   # NextJS app
-  # web:
-  #   # image: ghcr.io/onomated/countdownplus/countdownplus-web:latest
-  #   build: ../cplus-web/artifacts/release
-  #   depends_on:
-  #     - backend
-  #     - imgproxy
-  #   expose:
-  #     - "3000"
-  #   environment:
-  #     - PORT=3000
-  #   env_file:
-  #     - app_local.env
+  web:
+    image: ghcr.io/onomated/countdownplus/countdownplus-web:latest
+    # build: ../cplus-web/artifacts/release
+    depends_on:
+      - backend
+      - imgproxy
+    expose:
+      - "3000"
+    environment:
+      - PORT=3000
+    env_file:
+      - app_local.env
