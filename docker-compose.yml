@@ -36,15 +36,15 @@ services:
       - .env
 
   # NextJS app
-  # web:
-  #   image: ghcr.io/onomated/countdownplus/countdownplus-web:latest
-  #   depends_on:
-  #     - backend
-  #     - imgproxy
-  #   expose:
-  #     - "3000"
-  #   environment:
-  #     - PORT=3000
-  #   env_file:
-  #     # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
-  #     - .env
+  web:
+    image: ghcr.io/onomated/countdownplus/countdownplus-web:latest
+    depends_on:
+      - backend
+      - imgproxy
+    expose:
+      - "3000"
+    environment:
+      - PORT=3000
+    env_file:
+      # https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html#docker-env-cfg.env-variables
+      - .env
